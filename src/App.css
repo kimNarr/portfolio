@@ -1,0 +1,259 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, video, audio, iframe {
+  display: block;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+figure {
+  width: fit-content;
+  height: fit-content;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #ffffff;
+  background-color: #111111;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section {
+  padding: 0 80px;
+}
+
+.section_title {
+  font-size: 24px;
+  border-bottom: 1px solid #888888;
+  padding-bottom: 32px;
+}
+.section_title span {
+  color: #f34040;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  z-index: 9999;
+}
+header button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+}
+header button::before, header button::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+header button::before {
+  top: 0;
+}
+header button::after {
+  top: 10px;
+}
+header .gnb_wrap {
+  position: absolute;
+  display: none;
+  top: 36px;
+  right: 0;
+}
+header .gnb_wrap .gnb {
+  display: flex;
+  gap: 10px;
+}
+
+.text_deco {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 9;
+}
+.text_deco span {
+  position: fixed;
+  text-transform: capitalize;
+}
+.text_deco span:first-child {
+  top: 40px;
+  left: 40px;
+  writing-mode: vertical-rl;
+}
+.text_deco span:nth-child(2) {
+  bottom: 40px;
+  left: 40px;
+  writing-mode: vertical-rl;
+}
+.text_deco span:last-child {
+  bottom: 40px;
+  right: 40px;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 9;
+}
+.main .content h1 {
+  font-size: clamp(32px, 5vw, 96px);
+  text-transform: capitalize;
+}
+.main .content .scroll {
+  position: relative;
+  width: 2px;
+  height: 40px;
+  background-color: #888888;
+}
+.main .content .scroll .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+.main .bg {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 0;
+}
+.main .bg .inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.main .bg .inner video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .content {
+  padding: 120px 0;
+  border-bottom: 1px solid #888888;
+}
+.about .content h3 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+.about .content p {
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.about .content p:first-of-type {
+  margin-bottom: 24px;
+}
+
+.career {
+  width: 100%;
+  height: auto;
+  padding: 200px 80px;
+}
+.career article {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #888888;
+}
+.career article .company, .career article .description {
+  padding: 64px 0;
+}
+.career article .company h3, .career article .description h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.career article .company p, .career article .description p {
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.5);
+}
+.career article .company ul, .career article .description ul {
+  padding-left: 40px;
+}
+.career article .company ul li, .career article .description ul li {
+  color: rgba(255, 255, 255, 0.8);
+  list-style: disc;
+  line-height: 1.7;
+}
+.career article .company {
+  flex: 5;
+}
+.career article .description {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project {
+  width: 100%;
+  height: 100vh;
+}
+.project article {
+  display: flex;
+}
+
+/*# sourceMappingURL=App.css.map */

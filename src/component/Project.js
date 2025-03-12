@@ -15,17 +15,35 @@ function Project() {
                     </figure>
                 </div>
                 <div className='project_text'>
-                    <div className='group'>
-                        <h3>SK True Innovation Clone Coding<br />
-                        / 최대한 원본 사이트와 일치 하는것을 목표로 제작</h3>
+                    <div className='text_group'>
+                        <h3>SK True Innovation Clone Coding</h3>
                         <p>#반응형, #html, #css, #javascript, #swiper, #gsap</p>
                     </div>
-                    <div className='group'>
-                        <a href="#">view</a>
-                        <a href="#">github</a>
+                    <div className='btn_group'>
+                        <a href="https://kimnarr.github.io/cloneSite/" target='_blank' className='btn btn_red'>view</a>
+                        <a href="https://github.com/kimNarr/cloneSite" target='_blank' className='btn btn_normal'>github</a>
                     </div>
-
-
+                </div>
+            </article>
+            <article>
+                <div className='project_name'>
+                    <h3>react app</h3>
+                    <p>2025.02.10 ~ 2025.02.27</p>
+                </div>
+                <div className='project_img'>
+                    <figure>
+                        <img src="./img/project/img02.png" alt="project2" />
+                    </figure>
+                </div>
+                <div className='project_text'>
+                    <div className='text_group'>
+                        <h3>OPEN API를 활용한 날씨, 뉴스 리액트 앱 제작</h3>
+                        <p>#반응형, #html, #css, #javascript, #swiper, #gsap</p>
+                    </div>
+                    <div className='btn_group'>
+                        <a href="https://visionary-panda-45ba8e.netlify.app/" target='_blank' className='btn btn_red'>view</a>
+                        <a href="https://github.com/kimNarr/weather_app" target='_blank' className='btn btn_normal'>github</a>
+                    </div>
                 </div>
             </article>
         </section>

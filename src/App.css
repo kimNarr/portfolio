@@ -29,6 +29,16 @@ table, th, td {
   border-spacing: 0;
 }
 
+.btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: #ffffff;
@@ -200,7 +210,9 @@ header .gnb_wrap .gnb {
 }
 .about .content p {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 .about .content p:first-of-type {
@@ -253,7 +265,96 @@ header .gnb_wrap .gnb {
   height: 100vh;
 }
 .project article {
+  width: 100%;
   display: flex;
+  border-bottom: 1px solid #888888;
+}
+.project article .project_name, .project article .project_img, .project article .project_text {
+  padding: 64px 0;
+}
+.project article .project_name h3, .project article .project_img h3, .project article .project_text h3 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.project article .project_name p, .project article .project_img p, .project article .project_text p {
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.5);
+}
+.project article .project_name {
+  flex: 2;
+}
+.project article .project_img {
+  flex: 3;
+}
+.project article .project_img figure img {
+  max-width: 70%;
+}
+.project article .project_text {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project article .project_text .btn_group {
+  display: flex;
+  gap: 16px;
+}
+.project article .project_text .btn_group .btn_red {
+  background: #f34040;
+}
+.project article .project_text .btn_group .btn_normal {
+  background: #888888;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contact .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.contact .inner h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.contact .inner p {
+  font-size: 20px;
+  margin: 8px 0 32px 0;
+}
+.contact .bg {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 0;
+}
+.contact .bg .inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.contact .bg .inner video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -10,6 +10,7 @@ function Contact() {
                     <img src="./img/contact/github.svg" alt="github" />
                 </a>
             </div>
+            <div className='copyright'>©2025 Kim Dongjin All Right Reserved</div>
             <div className='bg'>
                 <div className='inner'>
                     <video muted autoPlay loop>

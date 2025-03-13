@@ -33,6 +33,7 @@ function Career() {
                         <ul>
                             <li>전자화폐거래소 KECTA</li>
                             <li>계명대학교 미래자동차 사업단 홈페이지</li>
+                            <li>한국백혈병소아암협회 대구경북지회 홈페이지</li>
                             <li>CoscomG 쇼핑몰</li>
                             <li>보담송이 쇼핑몰</li>
                             <li>SUKAS 쇼핑몰</li>

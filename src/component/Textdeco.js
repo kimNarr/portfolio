@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Textdeco() {
+    const [sY, setSY] = useState(0);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        setSY(scrollPosition);
+    };
+    useEffect(()=>{
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+    
     return (
-        <div className='text_deco'>
+        <div className={sY === 0 ? 'text_deco' : 'text_deco hide'}>
 			<span>publisher</span>
 			<span>front-end</span>
-			<span>/2025-03-07 Fri</span>
+			<span>/2025</span>
         </div>
     )
 }
